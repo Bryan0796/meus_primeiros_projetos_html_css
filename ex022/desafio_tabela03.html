@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabela</title>
+    <style>
+        table {
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+
+        thead{
+            background-color: rgb(95, 95, 95);
+            color: white;
+        }
+
+        thead, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td {
+            text-align: right;
+        }
+
+        .alinhamento {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <th rowspan="2">Área</th>
+        <th rowspan="2">Disciplinas</th>
+        <th colspan="2">Notas</th>
+        <th rowspan="2">Média</th>
+        <tr>
+            <th>Nota1</th>
+            <th>Nota2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="5">Exatas</th>
+        </tr>
+        <tr>
+            <td class="alinhamento">Matemática</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class="alinhamento">Física</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class="alinhamento">Química</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class="alinhamento">Biologia</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+            <thead>
+                <th colspan="4" class="alinhamento">Média de exatas</th>
+                <td>10</td>
+            </thead>
+        <th rowspan="3" class="alinhamento">Humanas</th>
+        <tr>
+            <td class="alinhamento">História</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class="alinhamento">Geografia</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+            <thead>
+                <th colspan="4">Média de Humanas</th>
+                <td>10</td>
+            </thead>
+    </tbody>
+</table>
+</body>
+</html>
